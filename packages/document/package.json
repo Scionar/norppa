@@ -1,0 +1,21 @@
+{
+  "name": "norppa-document",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "concurrently \"npm:build:watch\" \"npm:dev-server\"",
+    "dev-server": "node server.js -e js,ts,html",
+    "build:watch": "tsc --watch"
+  },
+  "dependencies": {
+    "livereload": "^0.9.3",
+    "nodemon": "2.0.7"
+  },
+  "devDependencies": {
+    "concurrently": "6.1.0"
+  }
+}

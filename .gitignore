@@ -1,2 +1,6 @@
-/node_modules
+# Specific
 /packages/**/**/lib
+
+# Global
+node_modules
+yarn-error.log
