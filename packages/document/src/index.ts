@@ -1,3 +1,3 @@
-const Main = () => {};
+import { Button } from 'norppa-button';
 
-export { Main };
+new Button();
