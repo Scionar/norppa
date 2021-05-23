@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,eAAe,CAAC;AAEvC,IAAI,MAAM,EAAE,CAAC","sourcesContent":["import { Button } from 'norppa-button';\n\nnew Button();"]}
