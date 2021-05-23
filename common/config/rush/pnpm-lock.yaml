@@ -1,0 +1,15 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@rush-temp/norppa-button': file:./projects/norppa-button.tgz
+
+dependencies:
+  '@rush-temp/norppa-button': file:projects/norppa-button.tgz
+
+packages:
+
+  file:projects/norppa-button.tgz:
+    resolution: {integrity: sha512-tVf6ji7QZzZ3/M90O7D4E37pIkxMh8rQgzNlJMUaZ1S+o2xv2Ig4PX179KLTub7OPU0CPd7X2tJFNMcJgKgFnQ==, tarball: file:projects/norppa-button.tgz}
+    name: '@rush-temp/norppa-button'
+    version: 0.0.0
+    dev: false
