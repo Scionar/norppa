@@ -392,6 +392,10 @@
     {
       "packageName": "norppa-button",
       "projectFolder": "packages/button"
+    },
+    {
+      "packageName": "norppa-document",
+      "projectFolder": "packages/document"
     }
 
     // {
