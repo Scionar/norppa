@@ -2195,7 +2195,7 @@ packages:
     dev: false
 
   file:projects/norppa-document.tgz_typescript@4.2.4:
-    resolution: {integrity: sha512-g4e9vfJQUVJd4DSgWqu3IxkJTVccax6u8SCktATTRuGa9Fw0LHpExvGclLI2LYuaJLw8VXVToZLxZ4cq3XnNnQ==, tarball: file:projects/norppa-document.tgz}
+    resolution: {integrity: sha512-u65uZLD94LgG22zghKdwKx2hWF1f7K5a5axAki0r3KTaGgYeP5W7lISSPqADawFDKGYM5XyacVSfR5imUt5M8Q==, tarball: file:projects/norppa-document.tgz}
     id: file:projects/norppa-document.tgz
     name: '@rush-temp/norppa-document'
     version: 0.0.0
