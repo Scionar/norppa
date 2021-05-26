@@ -149,8 +149,8 @@ packages:
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
     dev: false
 
-  /@types/node/15.6.0:
-    resolution: {integrity: sha512-gCYSfQpy+LYhOFTKAeE8BkyGqaxmlFxe+n4DKM6DR0wzw/HISUE/hAmkC/KT8Sw5PCJblqg062b3z9gucv3k0A==}
+  /@types/node/15.6.1:
+    resolution: {integrity: sha512-7EIraBEyRHEe7CH+Fm1XvgqU6uwZN8Q7jppJGcqjROMT29qhAuuOxYB1uEY5UMYQKEmA5D+5tBnhdaPXSsLONA==}
     dev: false
 
   /@types/normalize-package-data/2.4.0:
@@ -160,7 +160,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 15.6.0
+      '@types/node': 15.6.1
     dev: false
 
   /@types/trusted-types/1.0.6:
@@ -335,7 +335,7 @@ packages:
       http-cache-semantics: 4.1.0
       keyv: 3.1.0
       lowercase-keys: 2.0.0
-      normalize-url: 4.5.0
+      normalize-url: 4.5.1
       responselike: 1.0.2
     dev: false
 
@@ -1206,7 +1206,7 @@ packages:
       chokidar: 3.5.1
       livereload-js: 3.3.2
       opts: 2.0.2
-      ws: 7.4.5
+      ws: 7.4.6
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -1395,8 +1395,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /normalize-url/4.5.0:
-    resolution: {integrity: sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==}
+  /normalize-url/4.5.1:
+    resolution: {integrity: sha512-9UZCFRHQdNrfTpGg8+1INIg93B6zE0aXMVFkw1WFwvO4SlZywU6aLg5Of0Ap/PgcbSw4LNxvMWXMeugwMCX0AA==}
     engines: {node: '>=8'}
     dev: false
 
@@ -1502,8 +1502,8 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /path-parse/1.0.6:
-    resolution: {integrity: sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==}
+  /path-parse/1.0.7:
+    resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
     dev: false
 
   /picomatch/2.3.0:
@@ -1624,7 +1624,7 @@ packages:
     resolution: {integrity: sha512-wENBPt4ySzg4ybFQW2TT1zMQucPK95HSh/nq2CFTZVOGut2+pQvSsgtda4d26YrYcr067wjbmzOG8byDPBX63A==}
     dependencies:
       is-core-module: 2.4.0
-      path-parse: 1.0.6
+      path-parse: 1.0.7
     dev: false
 
   /responselike/1.0.2:
@@ -2114,8 +2114,8 @@ packages:
       typedarray-to-buffer: 3.1.5
     dev: false
 
-  /ws/7.4.5:
-    resolution: {integrity: sha512-xzyu3hFvomRfXKH8vOFMU3OguG6oOvhXMo3xsGy3xWExqaM2dxBbVxuD99O7m3ZUFMvvscsZDqxfgMaRr/Nr1g==}
+  /ws/7.4.6:
+    resolution: {integrity: sha512-YmhHDO4MzaDLB+M9ym/mDA5z0naX8j7SIlT8f8z+I0VtzsRbekxEutHSme7NPS2qE8StCYQNUnfWdXta/Yu85A==}
     engines: {node: '>=8.3.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -2195,7 +2195,7 @@ packages:
     dev: false
 
   file:projects/norppa-document.tgz_typescript@4.2.4:
-    resolution: {integrity: sha512-u65uZLD94LgG22zghKdwKx2hWF1f7K5a5axAki0r3KTaGgYeP5W7lISSPqADawFDKGYM5XyacVSfR5imUt5M8Q==, tarball: file:projects/norppa-document.tgz}
+    resolution: {integrity: sha512-IDBuxHMJjdFJGLOqqN6dMMm3WLSGlCBDFvJWE5h+4z+YZBnpc9iShdlsZSyvt2ZntifDFnV4/ffZh6j07YOmMw==, tarball: file:projects/norppa-document.tgz}
     id: file:projects/norppa-document.tgz
     name: '@rush-temp/norppa-document'
     version: 0.0.0
