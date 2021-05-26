@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "tsc -d",
-    "dev": "tsc --watch"
+    "build:watch": "tsc"
   },
   "devDependencies": {
     "ts-lit-plugin": "1.2.1",

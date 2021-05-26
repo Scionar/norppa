@@ -15,7 +15,8 @@ Link component to documentation package. Use package name from package.json.
 Run develop environment.
 
 ```bash
-(cd packages/document && rushx start)
+rush build:watch
+rush document
 ```
 
 
