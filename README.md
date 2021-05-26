@@ -19,6 +19,12 @@ rush build:watch
 rush document
 ```
 
+... and open browser.
+
+```
+http://localhost:8080/
+```
+
 
 
 
