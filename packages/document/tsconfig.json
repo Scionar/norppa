@@ -1,11 +1,9 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-      "module": "esnext",
-      "target": "es5",
-      "outDir": "./lib",
-    },
-    "exclude": [
-      "./lib/**/*"
-  ]
-  }
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "outDir": "./lib"
+  },
+  "exclude": ["./lib/**/*"]
+}

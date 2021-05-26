@@ -5,51 +5,50 @@ const path = require('path');
 const fs = require('fs').promises;
 
 let mimeTypes = {
-    '.html': 'text/html',
-    '.js': 'text/javascript',
-    '.css': 'text/css',
-    '.json': 'application/json',
-    '.png': 'image/png',
-    '.jpg': 'image/jpg',
-    '.gif': 'image/gif',
-    '.svg': 'image/svg+xml',
-    '.wav': 'audio/wav',
-    '.mp4': 'video/mp4',
-    '.woff': 'application/font-woff',
-    '.ttf': 'application/font-ttf',
-    '.eot': 'application/vnd.ms-fontobject',
-    '.otf': 'application/font-otf',
-    '.wasm': 'application/wasm',
-    '.ico' : 'image/x-icon'
+  '.html': 'text/html',
+  '.js': 'text/javascript',
+  '.css': 'text/css',
+  '.json': 'application/json',
+  '.png': 'image/png',
+  '.jpg': 'image/jpg',
+  '.gif': 'image/gif',
+  '.svg': 'image/svg+xml',
+  '.wav': 'audio/wav',
+  '.mp4': 'video/mp4',
+  '.woff': 'application/font-woff',
+  '.ttf': 'application/font-ttf',
+  '.eot': 'application/vnd.ms-fontobject',
+  '.otf': 'application/font-otf',
+  '.wasm': 'application/wasm',
+  '.ico': 'image/x-icon'
 };
 
 const requestListener = function (req, res) {
-    const url = req.url;
+  const url = req.url;
 
-    if (url === '/') {
-        fs.readFile(__dirname + "/index.html")
-        .then(contents => {
-            res.setHeader("Content-Type", "text/html");
-            res.writeHead(200);
-            res.end(contents);
-        })
-    } else {
-        fs.readFile(__dirname + url)
-        .then(contents => {
-            let extname = String(path.extname(url)).toLowerCase();
-            let contentType = mimeTypes[extname] || 'application/octet-stream';
-    
-            res.writeHead(200, { 'Content-Type': contentType });
-            res.end(contents, 'utf-8');
-        })
-        .catch(error => {
-            console.log(error);
-        })
-    }
-}
+  if (url === '/') {
+    fs.readFile(__dirname + '/index.html').then((contents) => {
+      res.setHeader('Content-Type', 'text/html');
+      res.writeHead(200);
+      res.end(contents);
+    });
+  } else {
+    fs.readFile(__dirname + url)
+      .then((contents) => {
+        let extname = String(path.extname(url)).toLowerCase();
+        let contentType = mimeTypes[extname] || 'application/octet-stream';
+
+        res.writeHead(200, { 'Content-Type': contentType });
+        res.end(contents, 'utf-8');
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+};
 
 const server = http.createServer(requestListener);
 server.listen(8080);
 
 var lrserver = livereload.createServer();
-lrserver.watch(__dirname + "/index.html", __dirname + "/src");
+lrserver.watch(__dirname + '/index.html', __dirname + '/src');

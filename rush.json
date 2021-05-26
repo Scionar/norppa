@@ -2,8 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
   "rushVersion": "5.47.0",
   "pnpmVersion": "6.3.0",
-  "pnpmOptions": {
-  },
+  "pnpmOptions": {},
 
   /**
    * Older releases of the Node.js engine may be missing features required by your system.
@@ -97,7 +96,7 @@
   //     "tools",      // non-shipping projects that are part of the developer toolchain
   //     "prototypes"  // experiments that should mostly be ignored by the review process
   //   ],
-  // 
+  //
   //   /**
   //    * A list of NPM package scopes that will be excluded from review.
   //    * We recommend to exclude TypeScript typings (the "@types" scope), because
@@ -127,14 +126,12 @@
     //   "[^@]+@users\\.noreply\\.github\\.com",
     //   "travis@example\\.org"
     // ],
-
     /**
      * When Rush reports that the address is malformed, the notice can include an example
      * of a recommended email.  Make sure it conforms to one of the allowedEmailRegExps
      * expressions.
      */
     // "sampleEmail": "mrexample@users.noreply.github.com",
-
     /**
      * The commit message to use when committing changes during 'rush publish'.
      *
@@ -143,7 +140,6 @@
      * in the commit message, and then customize Rush's message to contain that string.
      */
     // "versionBumpCommitMessage": "Applying package updates. [skip-ci]",
-
     /**
      * The commit message to use when committing changes during 'rush version'.
      *
@@ -160,14 +156,12 @@
     "defaultRemote": "origin"
   },
   "eventHooks": {
-    "preRushInstall": [
-    ],
+    "preRushInstall": [],
     "postRushInstall": [],
     "preRushBuild": [],
     "postRushBuild": []
   },
-  "variants": [
-  ],
+  "variants": [],
   "projects": [
     {
       "packageName": "norppa-button",
