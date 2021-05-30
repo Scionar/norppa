@@ -8,7 +8,7 @@ Repository uses [Rush monorepo manager](https://rushjs.io/). Please install the 
 
 Development is done in documentation package. Component package needs to be linked to documentation inside monorepo.
 
-Add new package to `./rush.json` configuration file on root. Link component to documentation package. Use package name from package.json.
+Add new package to `./rush.json` configuration file on root. 
 
 Update rush configuration with:
 
@@ -16,7 +16,7 @@ Update rush configuration with:
 rush update
 ```
 
-Link package to documentation.
+Link component to documentation package. Use package name from package.json.
 
 ```bash
 (cd packages/document && rush add <package name>)
