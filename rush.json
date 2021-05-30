@@ -170,6 +170,10 @@
     {
       "packageName": "norppa-document",
       "projectFolder": "packages/document"
+    },
+    {
+      "packageName": "norppa-header",
+      "projectFolder": "packages/header"
     }
   ]
 }

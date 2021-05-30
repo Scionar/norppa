@@ -5,6 +5,7 @@ specifiers:
   '@rollup/plugin-typescript': 8.2.1
   '@rush-temp/norppa-button': file:./projects/norppa-button.tgz
   '@rush-temp/norppa-document': file:./projects/norppa-document.tgz
+  '@rush-temp/norppa-header': file:./projects/norppa-header.tgz
   concurrently: 6.1.0
   lit: 2.0.0-rc.2
   livereload: ^0.9.3
@@ -19,6 +20,7 @@ dependencies:
   '@rollup/plugin-typescript': 8.2.1_rollup@2.47.0+typescript@4.2.4
   '@rush-temp/norppa-button': file:projects/norppa-button.tgz
   '@rush-temp/norppa-document': file:projects/norppa-document.tgz_typescript@4.2.4
+  '@rush-temp/norppa-header': file:projects/norppa-header.tgz
   concurrently: 6.1.0
   lit: 2.0.0-rc.2
   livereload: 0.9.3
@@ -2212,4 +2214,14 @@ packages:
       - tslib
       - typescript
       - utf-8-validate
+    dev: false
+
+  file:projects/norppa-header.tgz:
+    resolution: {integrity: sha512-dGczuVBQf0z1z2yQR3uE2xuz5dtbahEXNEZ0O9oTdiIjTRG/eivx9YefpM1/42LC0RYE1ucAJspn+cht6A+CjQ==, tarball: file:projects/norppa-header.tgz}
+    name: '@rush-temp/norppa-header'
+    version: 0.0.0
+    dependencies:
+      lit: 2.0.0-rc.2
+      ts-lit-plugin: 1.2.1
+      typescript: 4.2.4
     dev: false
