@@ -1,0 +1,18 @@
+{
+  "name": "norppa-header",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc -d",
+    "build:watch": "tsc"
+  },
+  "devDependencies": {
+    "ts-lit-plugin": "1.2.1",
+    "typescript": "4.2.4",
+    "lit": "2.0.0-rc.2"
+  }
+}

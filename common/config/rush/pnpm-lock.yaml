@@ -5,6 +5,7 @@ specifiers:
   '@rollup/plugin-typescript': 8.2.1
   '@rush-temp/norppa-button': file:./projects/norppa-button.tgz
   '@rush-temp/norppa-document': file:./projects/norppa-document.tgz
+  '@rush-temp/norppa-header': file:./projects/norppa-header.tgz
   concurrently: 6.1.0
   lit: 2.0.0-rc.2
   livereload: ^0.9.3
@@ -19,6 +20,7 @@ dependencies:
   '@rollup/plugin-typescript': 8.2.1_rollup@2.47.0+typescript@4.2.4
   '@rush-temp/norppa-button': file:projects/norppa-button.tgz
   '@rush-temp/norppa-document': file:projects/norppa-document.tgz_typescript@4.2.4
+  '@rush-temp/norppa-header': file:projects/norppa-header.tgz
   concurrently: 6.1.0
   lit: 2.0.0-rc.2
   livereload: 0.9.3
@@ -1180,6 +1182,10 @@ packages:
       lit-html: 2.0.0-rc.3
     dev: false
 
+  /lit-html/1.4.1:
+    resolution: {integrity: sha512-B9btcSgPYb1q4oSOb/PrOT6Z/H+r6xuNzfH4lFli/AWhYwdtrgQkQWBbIc6mdnf6E2IL3gDXdkkqNktpU0OZQA==}
+    dev: false
+
   /lit-html/2.0.0-rc.3:
     resolution: {integrity: sha512-Y6P8LlAyQuqvzq6l/Nc4z5/P5M/rVLYKQIRxcNwSuGajK0g4kbcBFQqZmgvqKG+ak+dHZjfm2HUw9TF5N/pkCw==}
     dependencies:
@@ -2195,7 +2201,7 @@ packages:
     dev: false
 
   file:projects/norppa-document.tgz_typescript@4.2.4:
-    resolution: {integrity: sha512-IDBuxHMJjdFJGLOqqN6dMMm3WLSGlCBDFvJWE5h+4z+YZBnpc9iShdlsZSyvt2ZntifDFnV4/ffZh6j07YOmMw==, tarball: file:projects/norppa-document.tgz}
+    resolution: {integrity: sha512-cF3Lh/SuAhPlhLbbIOjjeV9L5DkQE3AEQmj9jXgSUjeIwvRcWNFrJY6ipUzNSB3DII51uzpK0JYz6ZR9ziUT1Q==, tarball: file:projects/norppa-document.tgz}
     id: file:projects/norppa-document.tgz
     name: '@rush-temp/norppa-document'
     version: 0.0.0
@@ -2203,6 +2209,7 @@ packages:
       '@rollup/plugin-node-resolve': 13.0.0_rollup@2.47.0
       '@rollup/plugin-typescript': 8.2.1_rollup@2.47.0+typescript@4.2.4
       concurrently: 6.1.0
+      lit-html: 1.4.1
       livereload: 0.9.3
       node-static: 0.7.11
       nodemon: 2.0.7
@@ -2212,4 +2219,14 @@ packages:
       - tslib
       - typescript
       - utf-8-validate
+    dev: false
+
+  file:projects/norppa-header.tgz:
+    resolution: {integrity: sha512-dGczuVBQf0z1z2yQR3uE2xuz5dtbahEXNEZ0O9oTdiIjTRG/eivx9YefpM1/42LC0RYE1ucAJspn+cht6A+CjQ==, tarball: file:projects/norppa-header.tgz}
+    name: '@rush-temp/norppa-header'
+    version: 0.0.0
+    dependencies:
+      lit: 2.0.0-rc.2
+      ts-lit-plugin: 1.2.1
+      typescript: 4.2.4
     dev: false
