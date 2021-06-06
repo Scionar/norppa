@@ -19,7 +19,7 @@ rush update
 Link component to documentation package. Use package name from package.json.
 
 ```bash
-(cd packages/document && rush add <package name>)
+(cd packages/document && rush add -p <package name>)
 ```
 
 
