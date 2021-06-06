@@ -7,7 +7,7 @@ import { customElement } from 'lit/decorators.js';
 @customElement('norppa-header')
 export class Header extends LitElement {
   render() {
-    return html` <h1>Header</h1> `;
+    return html` <h1><slot /></h1> `;
   }
 }
 

@@ -7,7 +7,7 @@ import { customElement } from 'lit/decorators.js';
 @customElement('norppa-button')
 export class Button extends LitElement {
   render() {
-    return html` <button>Button</button> `;
+    return html` <button><slot /></button> `;
   }
 }
 

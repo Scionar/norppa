@@ -10,8 +10,8 @@ const myTemplate = () =>
   html`
     <div>
       Hello, Norppa!
-      <norppa-header></norppa-header>
-      <norppa-button></norppa-button>
+      <norppa-header>Header</norppa-header>
+      <norppa-button>Button</norppa-button>
     </div>
   `;
 
