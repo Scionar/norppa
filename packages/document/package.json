@@ -17,7 +17,8 @@
     "nodemon": "2.0.7",
     "norppa-button": "~1.0.0",
     "norppa-header": "~1.0.0",
-    "lit-html": "1.4.1"
+    "lit-html": "1.4.1",
+    "norppa-link": "~1.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "13.0.0",
