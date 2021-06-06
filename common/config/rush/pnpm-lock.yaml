@@ -6,6 +6,7 @@ specifiers:
   '@rush-temp/norppa-button': file:./projects/norppa-button.tgz
   '@rush-temp/norppa-document': file:./projects/norppa-document.tgz
   '@rush-temp/norppa-header': file:./projects/norppa-header.tgz
+  '@rush-temp/norppa-link': file:./projects/norppa-link.tgz
   concurrently: 6.1.0
   lit: 2.0.0-rc.2
   lit-html: 1.4.1
@@ -14,14 +15,16 @@ specifiers:
   nodemon: 2.0.7
   rollup: 2.47.0
   ts-lit-plugin: 1.2.1
+  tslib: 2.2.0
   typescript: 4.2.4
 
 dependencies:
   '@rollup/plugin-node-resolve': 13.0.0_rollup@2.47.0
-  '@rollup/plugin-typescript': 8.2.1_rollup@2.47.0+typescript@4.2.4
+  '@rollup/plugin-typescript': 8.2.1_810b5a6d1c7477a73baaceebd2991e4b
   '@rush-temp/norppa-button': file:projects/norppa-button.tgz
   '@rush-temp/norppa-document': file:projects/norppa-document.tgz_typescript@4.2.4
   '@rush-temp/norppa-header': file:projects/norppa-header.tgz
+  '@rush-temp/norppa-link': file:projects/norppa-link.tgz
   concurrently: 6.1.0
   lit: 2.0.0-rc.2
   lit-html: 1.4.1
@@ -30,6 +33,7 @@ dependencies:
   nodemon: 2.0.7
   rollup: 2.47.0
   ts-lit-plugin: 1.2.1
+  tslib: 2.2.0
   typescript: 4.2.4
 
 packages:
@@ -123,20 +127,6 @@ packages:
       resolve: 1.20.0
       rollup: 2.47.0
       tslib: 2.2.0
-      typescript: 4.2.4
-    dev: false
-
-  /@rollup/plugin-typescript/8.2.1_rollup@2.47.0+typescript@4.2.4:
-    resolution: {integrity: sha512-Qd2E1pleDR4bwyFxqbjt4eJf+wB0UKVMLc7/BAFDGVdAXQMCsD4DUv5/7/ww47BZCYxWtJqe1Lo0KVNswBJlRw==}
-    engines: {node: '>=8.0.0'}
-    peerDependencies:
-      rollup: ^2.14.0
-      tslib: '*'
-      typescript: '>=3.7.0'
-    dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.47.0
-      resolve: 1.20.0
-      rollup: 2.47.0
       typescript: 4.2.4
     dev: false
 
@@ -2245,6 +2235,16 @@ packages:
   file:projects/norppa-header.tgz:
     resolution: {integrity: sha512-dGczuVBQf0z1z2yQR3uE2xuz5dtbahEXNEZ0O9oTdiIjTRG/eivx9YefpM1/42LC0RYE1ucAJspn+cht6A+CjQ==, tarball: file:projects/norppa-header.tgz}
     name: '@rush-temp/norppa-header'
+    version: 0.0.0
+    dependencies:
+      lit: 2.0.0-rc.2
+      ts-lit-plugin: 1.2.1
+      typescript: 4.2.4
+    dev: false
+
+  file:projects/norppa-link.tgz:
+    resolution: {integrity: sha512-OGAHUFz9alxq200zCgFa49JznF+dA9+bfRmNJFpKZNUovqt56lnK9A17DnogZdi+R+D0ie9LtzRTOGYPQTCmuQ==, tarball: file:projects/norppa-link.tgz}
+    name: '@rush-temp/norppa-link'
     version: 0.0.0
     dependencies:
       lit: 2.0.0-rc.2
