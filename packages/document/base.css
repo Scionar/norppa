@@ -4,10 +4,11 @@
 }
 
 html {
-  font-size: 62.5%; /* Set font size to 10px */
+  font-size: 62.5%; /* Set font size to 10px, when using rem */
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--primary-color);
+  font-size: 1.6rem; /* Use 16px font size, as a base font size */
 }
