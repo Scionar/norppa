@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #f7f7f7;
   --primary-color: #262626;
+  --secondary-color: #f7f7f7;
 }
 
 html {
@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem; /* Use 16px font size, as a base font size */
