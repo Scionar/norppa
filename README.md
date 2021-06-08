@@ -1,4 +1,6 @@
-# Norppa DS
+# Norppa
+
+Web component library.
 
 ## Development
 
