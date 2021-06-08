@@ -1,6 +1,10 @@
 :root {
   --primary-color: #262626;
   --secondary-color: #f7f7f7;
+
+  --grid-gutter: 1.6rem;
+  --grid-page-padding: 2.4rem;
+  --grid-max-width: 114rem;
 }
 
 html {
