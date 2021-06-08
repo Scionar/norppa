@@ -178,6 +178,10 @@
     {
       "packageName": "norppa-link",
       "projectFolder": "packages/link"
+    },
+    {
+      "packageName": "norppa-grid",
+      "projectFolder": "packages/grid"
     }
   ]
 }
