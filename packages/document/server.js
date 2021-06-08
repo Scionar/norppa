@@ -3,6 +3,7 @@ var nodeStatic = require('node-static');
 const livereload = require('livereload');
 const path = require('path');
 const fs = require('fs').promises;
+const url = require('url');
 
 let mimeTypes = {
   '.html': 'text/html',
@@ -24,7 +25,7 @@ let mimeTypes = {
 };
 
 const requestListener = function (req, res) {
-  const url = req.url;
+  const url = req.url.split('?')[0];
 
   if (url === '/') {
     fs.readFile(__dirname + '/index.html').then((contents) => {
@@ -50,5 +51,11 @@ const requestListener = function (req, res) {
 const server = http.createServer(requestListener);
 server.listen(8080);
 
-var lrserver = livereload.createServer();
-lrserver.watch(__dirname + '/index.html', __dirname + '/src');
+var lrserver = livereload.createServer({
+  originalPath: 'http://localhost:8080/'
+});
+lrserver.watch([
+  __dirname + '/index.html',
+  __dirname + '/base.css',
+  __dirname + '/lib'
+]);
