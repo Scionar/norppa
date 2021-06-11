@@ -1,0 +1,11 @@
+import { LitElement, html } from 'lit'; import { customElement } from
+'lit/decorators.js'; /** *
+{{titleCase name}}
+component. */ @customElement('norppa-{{dashCase name}}') export class
+{{properCase name}}
+extends LitElement { render() { return html`
+<div><slot></slot></div>
+`; } } declare global { interface HTMLElementTagNameMap { 'norppa-{{dashCase
+  name
+}}':
+{{properCase name}}; } }
