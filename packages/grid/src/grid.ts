@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement } from 'lit/decorators.js';
 
 /**
  * Grid component.
@@ -48,9 +48,6 @@ export class Row extends LitElement {
  */
 @customElement('norppa-col')
 export class Col extends LitElement {
-  @property({ attribute: true })
-  width: string;
-
   static get styles() {
     return css`
       :host {
