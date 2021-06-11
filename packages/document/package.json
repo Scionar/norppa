@@ -10,7 +10,7 @@
     "start": "concurrently \"npm:build:watch\" \"npm:dev-server\"",
     "dev-server": "node server.js -e js,ts,html",
     "build": "rollup -c rollup.config.js",
-    "build:watch": "rollup -c rollup.config.js"
+    "build:watch": "rollup -c rollup.config.js --silent"
   },
   "dependencies": {
     "livereload": "^0.9.3",
