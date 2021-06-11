@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
 /**
@@ -49,6 +49,8 @@ export class Row extends LitElement {
 @customElement('norppa-col')
 export class Col extends LitElement {
   static get styles() {
+    const cols = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
     return css`
       :host {
         box-sizing: border-box;
@@ -57,52 +59,20 @@ export class Col extends LitElement {
         padding-right: calc(var(--grid-gutter) / 2);
       }
 
-      :host([width-1]) {
-        width: calc(((100% - 1px) / 12) * 1);
-      }
+      ${
+        // Create per column size styling
 
-      :host([width-2]) {
-        width: calc(((100% - 1px) / 12) * 2);
-      }
-
-      :host([width-3]) {
-        width: calc(((100% - 1px) / 12) * 3);
-      }
-
-      :host([width-4]) {
-        width: calc(((100% - 1px) / 12) * 4);
-      }
-
-      :host([width-5]) {
-        width: calc(((100% - 1px) / 12) * 5);
-      }
-
-      :host([width-6]) {
-        width: calc(((100% - 1px) / 12) * 6);
-      }
-
-      :host([width-7]) {
-        width: calc(((100% - 1px) / 12) * 7);
-      }
-
-      :host([width-8]) {
-        width: calc(((100% - 1px) / 12) * 8);
-      }
-
-      :host([width-9]) {
-        width: calc(((100% - 1px) / 12) * 9);
-      }
-
-      :host([width-10]) {
-        width: calc(((100% - 1px) / 12) * 10);
-      }
-
-      :host([width-11]) {
-        width: calc(((100% - 1px) / 12) * 11);
-      }
-
-      :host([width-12]) {
-        width: calc(((100% - 1px) / 12) * 12);
+        unsafeCSS(
+          cols
+            .map(
+              (item) => css`
+                :host([width-${item}]) {
+                  width: calc(((100% - 1px) / 12) * ${item});
+                }
+              `
+            )
+            .join(' ')
+        )
       }
     `;
   }
