@@ -182,6 +182,10 @@
     {
       "packageName": "norppa-grid",
       "projectFolder": "packages/grid"
+    },
+    {
+      "packageName": "norppa-card",
+      "projectFolder": "packages/card"
     }
   ]
 }

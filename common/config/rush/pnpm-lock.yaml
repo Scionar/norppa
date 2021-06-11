@@ -4,6 +4,7 @@ specifiers:
   '@rollup/plugin-node-resolve': 13.0.0
   '@rollup/plugin-typescript': 8.2.1
   '@rush-temp/norppa-button': file:./projects/norppa-button.tgz
+  '@rush-temp/norppa-card': file:./projects/norppa-card.tgz
   '@rush-temp/norppa-document': file:./projects/norppa-document.tgz
   '@rush-temp/norppa-grid': file:./projects/norppa-grid.tgz
   '@rush-temp/norppa-header': file:./projects/norppa-header.tgz
@@ -23,6 +24,7 @@ dependencies:
   '@rollup/plugin-node-resolve': 13.0.0_rollup@2.47.0
   '@rollup/plugin-typescript': 8.2.1_810b5a6d1c7477a73baaceebd2991e4b
   '@rush-temp/norppa-button': file:projects/norppa-button.tgz
+  '@rush-temp/norppa-card': file:projects/norppa-card.tgz
   '@rush-temp/norppa-document': file:projects/norppa-document.tgz_typescript@4.2.4
   '@rush-temp/norppa-grid': file:projects/norppa-grid.tgz
   '@rush-temp/norppa-header': file:projects/norppa-header.tgz
@@ -2213,8 +2215,18 @@ packages:
       typescript: 4.2.4
     dev: false
 
+  file:projects/norppa-card.tgz:
+    resolution: {integrity: sha512-ErRVj4W5KF7Hk0zwnQ6otts09sbZGb5G+Fs4zN/KSRP4LZzcW+B3w6ZKjqBr2h2Ie8TV81RLfI72PnIO7JctoQ==, tarball: file:projects/norppa-card.tgz}
+    name: '@rush-temp/norppa-card'
+    version: 0.0.0
+    dependencies:
+      lit: 2.0.0-rc.2
+      ts-lit-plugin: 1.2.1
+      typescript: 4.2.4
+    dev: false
+
   file:projects/norppa-document.tgz_typescript@4.2.4:
-    resolution: {integrity: sha512-tZdqppfgJhnQyQfANrvJhG1Kigl1yH/yxMFTuMG+b95X11FhIt2xkkXXxSoSKb3M1ZWgt+kR40/L7+huUnnL8g==, tarball: file:projects/norppa-document.tgz}
+    resolution: {integrity: sha512-Q3O9Howz9c40oDUsr1anXbrNWP/0qBv1JwIyizFJypZR9lMfVGH+2u0Z8C/T+NIuVNh30uaJllxcOKoqlxodFA==, tarball: file:projects/norppa-document.tgz}
     id: file:projects/norppa-document.tgz
     name: '@rush-temp/norppa-document'
     version: 0.0.0
