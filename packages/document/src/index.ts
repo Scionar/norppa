@@ -1,7 +1,7 @@
 import { Button } from 'norppa-button';
 import { Header } from 'norppa-header';
 import { Link } from 'norppa-link';
-import { Grid, Row } from 'norppa-grid';
+import { Grid, Row, Col } from 'norppa-grid';
 import { html, render } from 'lit-html';
 
 new Button();
@@ -9,6 +9,7 @@ new Header();
 new Link();
 new Grid();
 new Row();
+new Col();
 
 const articles = [
   {
@@ -48,17 +49,23 @@ const myTemplate = () =>
       </norppa-grid>
       <header>Hero</header>
       <main>
-        ${articles.map(
-          (item) => html`
-            <article>
-              <norppa-header>${item.title}</norppa-header>
-              <p>${item.excerpt}</p>
-              <footer>
-                ${item.tag.map((tag) => html` <span>${tag}</span> `)}
-              </footer>
-            </article>
-          `
-        )}
+        <norppa-grid>
+          <norppa-row>
+            ${articles.map(
+              (item) => html`
+                <norppa-col width-12>
+                  <article>
+                    <norppa-header>${item.title}</norppa-header>
+                    <p>${item.excerpt}</p>
+                    <footer>
+                      ${item.tag.map((tag) => html` <span>${tag}</span> `)}
+                    </footer>
+                  </article>
+                </norppa-col>
+              `
+            )}
+          </norppa-row>
+        </norppa-grid>
       </main>
       <footer>Footer</footer>
     </div>
