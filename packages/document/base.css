@@ -2,9 +2,36 @@
   --primary-color: #262626;
   --secondary-color: #f7f7f7;
 
+  --breakpoint-sm: 0;
+  --breakpoint-md: 60rem; /* 600px */
+  --breakpoint-lg: 102.4rem; /* 1024px */
+  --breakpoint-xl: 144rem; /* 1440px */
+
   --grid-gutter: 1.6rem;
   --grid-page-padding: 2.4rem;
   --grid-max-width: 114rem;
+}
+
+/* MD breakpoint */
+@media screen and (min-width: 60rem) {
+  :root {
+    --grid-gutter: 2.4rem;
+    --grid-page-padding: 3.6rem;
+  }
+}
+
+/* LG breakpoint */
+@media screen and (min-width: 102.4rem) {
+  :root {
+    --grid-page-padding: 6rem;
+  }
+}
+
+/* XL breakpoint */
+@media screen and (min-width: 144rem) {
+  :root {
+    --grid-page-padding: 7.6rem;
+  }
 }
 
 html {
