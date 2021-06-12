@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "norppa-link": "~1.0.0",
-    "norppa-header": "~1.0.0"
+    "norppa-header": "~1.0.0",
+    "norppa-tag": "~1.0.0"
   }
 }
