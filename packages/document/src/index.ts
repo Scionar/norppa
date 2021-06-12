@@ -55,6 +55,7 @@ const myTemplate = () =>
                     title=${item.title}
                     excerpt=${item.excerpt}
                     .tags=${item.tag}
+                    headerTag="h1"
                   />
                 </norppa-col>
               `
