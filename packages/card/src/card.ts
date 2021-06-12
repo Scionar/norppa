@@ -29,8 +29,11 @@ export class Card extends LitElement {
         </norppa-link>
 
         <p>${this.excerpt}</p>
+
         <footer>
-          ${this.tags.map((tag) => html` <norppa-tag>${tag}</norppa-tag> `)}
+          ${this.tags.map(
+            (tag) => html` <norppa-tag href="/">${tag}</norppa-tag> `
+          )}
         </footer>
       </article>
     `;
