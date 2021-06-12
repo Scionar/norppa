@@ -17,11 +17,14 @@ export class Card extends LitElement {
   @property({ type: Array })
   tags: string[] = [];
 
+  @property({ type: String })
+  headerTag: string = 'h2';
+
   render() {
     return html`
       <article>
         <norppa-link href="/">
-          <norppa-header> ${this.title} </norppa-header>
+          <norppa-header tag="${this.headerTag}"> ${this.title} </norppa-header>
         </norppa-link>
 
         <p>${this.excerpt}</p>
