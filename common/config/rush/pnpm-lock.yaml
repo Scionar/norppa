@@ -6,6 +6,7 @@ specifiers:
   '@rush-temp/norppa-button': file:./projects/norppa-button.tgz
   '@rush-temp/norppa-card': file:./projects/norppa-card.tgz
   '@rush-temp/norppa-document': file:./projects/norppa-document.tgz
+  '@rush-temp/norppa-foundation': file:./projects/norppa-foundation.tgz
   '@rush-temp/norppa-grid': file:./projects/norppa-grid.tgz
   '@rush-temp/norppa-header': file:./projects/norppa-header.tgz
   '@rush-temp/norppa-link': file:./projects/norppa-link.tgz
@@ -27,6 +28,7 @@ dependencies:
   '@rush-temp/norppa-button': file:projects/norppa-button.tgz
   '@rush-temp/norppa-card': file:projects/norppa-card.tgz
   '@rush-temp/norppa-document': file:projects/norppa-document.tgz_typescript@4.2.4
+  '@rush-temp/norppa-foundation': file:projects/norppa-foundation.tgz
   '@rush-temp/norppa-grid': file:projects/norppa-grid.tgz
   '@rush-temp/norppa-header': file:projects/norppa-header.tgz
   '@rush-temp/norppa-link': file:projects/norppa-link.tgz
@@ -2218,7 +2220,7 @@ packages:
     dev: false
 
   file:projects/norppa-card.tgz:
-    resolution: {integrity: sha512-n/reRJxs7kQre2bczC97QdluOtwjuh/TxZhPVST9t52RPODYD2p/H92uyj5LHqLidmm0Vv2UPbX7Tu/EC35Quw==, tarball: file:projects/norppa-card.tgz}
+    resolution: {integrity: sha512-Ere1K+UevQZYK5xX3V2pqv/OGBAO3zKTIju5g88oorJvV/f4yHOyplxmi4Q2OQCk6iMwMvpxRPeN1c/JsWeCHA==, tarball: file:projects/norppa-card.tgz}
     name: '@rush-temp/norppa-card'
     version: 0.0.0
     dependencies:
@@ -2228,7 +2230,7 @@ packages:
     dev: false
 
   file:projects/norppa-document.tgz_typescript@4.2.4:
-    resolution: {integrity: sha512-YWwYBu2mN35/LmOx6ObBHfg4gy+YNFPLLCJbXzhuzP5Xg7tukStUK0OvJgqG+s7t2go1wItK7zZEFrJbTq2qEA==, tarball: file:projects/norppa-document.tgz}
+    resolution: {integrity: sha512-/lE6FA7yimWTMmFFUQAgs30n1RbovXZjG5VdQJXxe+lmPsVSOwCuiSJeTKtcAfgOgMeW96U2uKqJGZFIlbSKvA==, tarball: file:projects/norppa-document.tgz}
     id: file:projects/norppa-document.tgz
     name: '@rush-temp/norppa-document'
     version: 0.0.0
@@ -2246,6 +2248,14 @@ packages:
       - bufferutil
       - typescript
       - utf-8-validate
+    dev: false
+
+  file:projects/norppa-foundation.tgz:
+    resolution: {integrity: sha512-Y0DIVRdxxCP1+vX+KNuHFytrpG3xXzsSkKMiL7o6F4nWrsO5pmb1mp39VaYmHKrKVkc+BUovxPs3/TqMddkNvg==, tarball: file:projects/norppa-foundation.tgz}
+    name: '@rush-temp/norppa-foundation'
+    version: 0.0.0
+    dependencies:
+      typescript: 4.2.4
     dev: false
 
   file:projects/norppa-grid.tgz:

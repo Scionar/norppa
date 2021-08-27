@@ -1,2 +1,6 @@
-import { Foundation } from './foundation';
-export { Foundation };
+const colors = {
+  primary: '#262626',
+  secondary: '#f7f7f7'
+};
+
+export { colors };
