@@ -9,6 +9,7 @@ specifiers:
   '@rush-temp/norppa-grid': file:./projects/norppa-grid.tgz
   '@rush-temp/norppa-header': file:./projects/norppa-header.tgz
   '@rush-temp/norppa-link': file:./projects/norppa-link.tgz
+  '@rush-temp/norppa-tag': file:./projects/norppa-tag.tgz
   concurrently: 6.1.0
   lit: 2.0.0-rc.2
   lit-html: 1.4.1
@@ -29,6 +30,7 @@ dependencies:
   '@rush-temp/norppa-grid': file:projects/norppa-grid.tgz
   '@rush-temp/norppa-header': file:projects/norppa-header.tgz
   '@rush-temp/norppa-link': file:projects/norppa-link.tgz
+  '@rush-temp/norppa-tag': file:projects/norppa-tag.tgz
   concurrently: 6.1.0
   lit: 2.0.0-rc.2
   lit-html: 1.4.1
@@ -2216,7 +2218,7 @@ packages:
     dev: false
 
   file:projects/norppa-card.tgz:
-    resolution: {integrity: sha512-ErRVj4W5KF7Hk0zwnQ6otts09sbZGb5G+Fs4zN/KSRP4LZzcW+B3w6ZKjqBr2h2Ie8TV81RLfI72PnIO7JctoQ==, tarball: file:projects/norppa-card.tgz}
+    resolution: {integrity: sha512-n/reRJxs7kQre2bczC97QdluOtwjuh/TxZhPVST9t52RPODYD2p/H92uyj5LHqLidmm0Vv2UPbX7Tu/EC35Quw==, tarball: file:projects/norppa-card.tgz}
     name: '@rush-temp/norppa-card'
     version: 0.0.0
     dependencies:
@@ -2226,7 +2228,7 @@ packages:
     dev: false
 
   file:projects/norppa-document.tgz_typescript@4.2.4:
-    resolution: {integrity: sha512-Q3O9Howz9c40oDUsr1anXbrNWP/0qBv1JwIyizFJypZR9lMfVGH+2u0Z8C/T+NIuVNh30uaJllxcOKoqlxodFA==, tarball: file:projects/norppa-document.tgz}
+    resolution: {integrity: sha512-YWwYBu2mN35/LmOx6ObBHfg4gy+YNFPLLCJbXzhuzP5Xg7tukStUK0OvJgqG+s7t2go1wItK7zZEFrJbTq2qEA==, tarball: file:projects/norppa-document.tgz}
     id: file:projects/norppa-document.tgz
     name: '@rush-temp/norppa-document'
     version: 0.0.0
@@ -2269,6 +2271,16 @@ packages:
   file:projects/norppa-link.tgz:
     resolution: {integrity: sha512-OGAHUFz9alxq200zCgFa49JznF+dA9+bfRmNJFpKZNUovqt56lnK9A17DnogZdi+R+D0ie9LtzRTOGYPQTCmuQ==, tarball: file:projects/norppa-link.tgz}
     name: '@rush-temp/norppa-link'
+    version: 0.0.0
+    dependencies:
+      lit: 2.0.0-rc.2
+      ts-lit-plugin: 1.2.1
+      typescript: 4.2.4
+    dev: false
+
+  file:projects/norppa-tag.tgz:
+    resolution: {integrity: sha512-LR3FLaheXDBCSrSsJZMAreSRT0tHVsP0m1W+BbeOgc2dT+4VXCcWqo7M/Yg5UxcOrUTg4INk6WfMLzswLLwejA==, tarball: file:projects/norppa-tag.tgz}
+    name: '@rush-temp/norppa-tag'
     version: 0.0.0
     dependencies:
       lit: 2.0.0-rc.2

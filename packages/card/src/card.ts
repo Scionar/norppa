@@ -2,6 +2,7 @@ import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { Link } from 'norppa-link';
 import { Header } from 'norppa-header';
+import { Tag } from 'norppa-tag';
 
 /**
  * Card component.
@@ -28,7 +29,12 @@ export class Card extends LitElement {
         </norppa-link>
 
         <p>${this.excerpt}</p>
-        <footer>${this.tags.map((tag) => html` <span>${tag}</span> `)}</footer>
+
+        <footer>
+          ${this.tags.map(
+            (tag) => html` <norppa-tag href="/">${tag}</norppa-tag> `
+          )}
+        </footer>
       </article>
     `;
   }

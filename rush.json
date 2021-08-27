@@ -186,6 +186,10 @@
     {
       "packageName": "norppa-card",
       "projectFolder": "packages/card"
+    },
+    {
+      "packageName": "norppa-tag",
+      "projectFolder": "packages/tag"
     }
   ]
 }

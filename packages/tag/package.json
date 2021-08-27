@@ -1,5 +1,5 @@
 {
-  "name": "norppa-card",
+  "name": "norppa-tag",
   "version": "1.0.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -14,10 +14,5 @@
     "ts-lit-plugin": "1.2.1",
     "typescript": "4.2.4",
     "lit": "2.0.0-rc.2"
-  },
-  "dependencies": {
-    "norppa-link": "~1.0.0",
-    "norppa-header": "~1.0.0",
-    "norppa-tag": "~1.0.0"
   }
 }

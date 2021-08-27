@@ -20,7 +20,8 @@
     "lit-html": "1.4.1",
     "norppa-link": "~1.0.0",
     "norppa-grid": "~1.0.0",
-    "norppa-card": "~1.0.0"
+    "norppa-card": "~1.0.0",
+    "norppa-tag": "~1.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "13.0.0",

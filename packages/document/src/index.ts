@@ -3,6 +3,7 @@ import { Header } from 'norppa-header';
 import { Link } from 'norppa-link';
 import { Grid, Row, Col } from 'norppa-grid';
 import { Card } from 'norppa-card';
+import { Tag } from 'norppa-tag';
 import { html, render } from 'lit-html';
 
 new Button();
@@ -12,6 +13,7 @@ new Grid();
 new Row();
 new Col();
 new Card();
+new Tag();
 
 const articles = [
   {
