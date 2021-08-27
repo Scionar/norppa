@@ -190,6 +190,10 @@
     {
       "packageName": "norppa-tag",
       "projectFolder": "packages/tag"
+    },
+    {
+      "packageName": "norppa-foundation",
+      "projectFolder": "packages/foundation"
     }
   ]
 }
